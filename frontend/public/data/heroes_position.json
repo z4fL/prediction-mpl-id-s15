@@ -1,0 +1,22 @@
+[
+  {
+    "name": "explaner",
+    "icon": "positions/explane_icon.svg"
+  },
+  {
+    "name": "jungler",
+    "icon": "positions/jungler_icon.svg"
+  },
+  {
+    "name": "midLaner",
+    "icon": "positions/midlane_icon.svg"
+  },
+  {
+    "name": "goldLaner",
+    "icon": "positions/goldlane_icon.svg"
+  },
+  {
+    "name": "roamer",
+    "icon": "positions/roam_icon.svg"
+  }
+]
