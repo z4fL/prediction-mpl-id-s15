@@ -49,14 +49,14 @@ const GridHeroes = ({ heroes, pick }) => {
 
 const MidSection = ({ predict, result, setResult, setDatapick }) => {
   const handleReset = () => {
-    setResult("");
+    setResult({});
     setDatapick({ blue: [], red: [] });
   };
 
   return (
     <>
       <div className="absolute left-1/2 transform -translate-x-1/2 top-14 z-10 flex flex-col justify-center items-center">
-        {result === "" ? (
+        {Object.keys(result).length === 0 ? (
           <div className="font-bebas-neue text-white text-6xl mb-5">VS</div>
         ) : (
           <button
@@ -74,8 +74,8 @@ const MidSection = ({ predict, result, setResult, setDatapick }) => {
       </div>
       <div className="absolute left-1/2 transform -translate-x-1/2 z-10 bottom-22 flex flex-col justify-center items-center">
         <div className="flex gap-7 font-bebas-neue text-slate-900 text-2xl">
-          <span>42.67%</span>
-          <span>57.33%</span>
+          <span>{result.blue_chance}%</span>
+          <span>{result.red_chance}%</span>
         </div>
       </div>
 
@@ -182,8 +182,9 @@ const App = () => {
   const [datapick, setDatapick] = useState({ blue: [], red: [] });
   const [activeRole, setActiveRole] = useState("");
   const [filteredHeroes, setFilteredHeroes] = useState([]);
-  const [result, setResult] = useState("");
-  const [sideWinPercent, setSideWinPercent] = useState([])
+  const [result, setResult] = useState({});
+
+  const flaskUrl = import.meta.env.VITE_FLASK_URL;
 
   const { data: heroes, loading: loadingHero } = useFetch(
     "/data/heroes_detail_1.9.72.json"
@@ -310,11 +311,22 @@ const App = () => {
       late: attributes.map((h) => h?.late ?? 0),
     };
 
-    const payload = {
-      data_picks,
-      attributes: attribute,
-    };
-    console.log(payload);
+    try {
+      const response = await fetch(`${flaskUrl}/predict`, {
+        method: "POST",
+        headers: { "Content-Type": "application/json" },
+        body: JSON.stringify({ data_picks, attributes: attribute }),
+      });
+      if (!response.ok) {
+        throw new Error(`HTTP error! status: ${response.status}`);
+      }
+      const resultData = await response.json();
+      setResult(resultData);
+    } catch (err) {
+      console.log(err.message);
+
+      setResult({ error: err.message });
+    }
   };
 
   if (isLoading) {
@@ -334,7 +346,7 @@ const App = () => {
               color={"bg-[#39B5FF]"}
               pickedHeroes={datapick.blue}
               removeHero={removeHero}
-              win={result}
+              win={result.prediction}
               positions={positions}
               heroes={heroes}
             />
