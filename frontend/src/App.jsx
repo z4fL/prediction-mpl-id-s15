@@ -23,7 +23,7 @@ const useFetch = (url) => {
 const Loading = () => {
   return (
     <div className="flex items-center justify-center h-screen">
-      <div className="text-7xl">Loading..</div>
+      <div className="text-7xl font-bebas-neue text-slate-800">Loading..</div>
     </div>
   );
 };
