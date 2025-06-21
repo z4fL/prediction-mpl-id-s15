@@ -1,12 +1,17 @@
 import os
 import time
 from flask import Flask, request, jsonify
+from flask_cors import CORS
 import pandas as pd
 import threading
 import signal
 from pyngrok import ngrok
 
 app = Flask(__name__)
+CORS(app, origins=[
+    "http://localhost:5173",
+    "https://mpl-id-s15-prediction-z4fl.netlify.app"
+])
 port = 5000
 subdomain = "deeply-lenient-mammoth"
 
