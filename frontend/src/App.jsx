@@ -56,7 +56,7 @@ const MidSection = ({ predict, result, setResult, setDatapick }) => {
   return (
     <>
       <div className="absolute left-1/2 transform -translate-x-1/2 top-14 z-10 flex flex-col justify-center items-center">
-        {Object.keys(result).length === 0 ? (
+        {Object.keys(result).length === 0 && !result.error ? (
           <div className="font-bebas-neue text-white text-6xl mb-5">VS</div>
         ) : (
           <button
@@ -72,12 +72,15 @@ const MidSection = ({ predict, result, setResult, setDatapick }) => {
           </button>
         )}
       </div>
-      <div className="absolute left-1/2 transform -translate-x-1/2 z-10 bottom-22 flex flex-col justify-center items-center">
-        <div className="flex gap-7 font-bebas-neue text-slate-900 text-2xl">
-          <span>{result.blue_chance}%</span>
-          <span>{result.red_chance}%</span>
+
+      {Object.keys(result).length > 0 && !result.error && (
+        <div className="absolute left-1/2 transform -translate-x-1/2 z-10 bottom-22 flex flex-col justify-center items-center">
+          <div className="flex gap-7 font-bebas-neue text-slate-900 text-2xl">
+            <span>{result.blue_chance}%</span>
+            <span>{result.red_chance}%</span>
+          </div>
         </div>
-      </div>
+      )}
 
       <div className="absolute z-10 bottom-8 left-1/2 transform -translate-x-1/2">
         <button
@@ -346,7 +349,7 @@ const App = () => {
               color={"bg-[#39B5FF]"}
               pickedHeroes={datapick.blue}
               removeHero={removeHero}
-              win={result.prediction}
+              win={result.prediction ?? ""}
               positions={positions}
               heroes={heroes}
             />
@@ -355,7 +358,7 @@ const App = () => {
               color={"bg-[#FF5958]"}
               pickedHeroes={datapick.red}
               removeHero={removeHero}
-              win={result}
+              win={result.prediction ?? ""}
               positions={positions}
               heroes={heroes}
             />
