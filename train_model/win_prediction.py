@@ -29,6 +29,10 @@ attributes_df.drop(columns=[
     'id',
     'main_role',
     'secondary_role',
+    'main_lane',
+    'secondary_lane',
+    'first_speciality',
+    'secondary_speciality',
     'portrait',
     'icon'
     ], inplace=True)
@@ -125,11 +129,9 @@ X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.25, random
 
 # Melatih model Random Forest
 rf_model = RandomForestClassifier(
-    random_state=54,
-    n_estimators=80,
-    max_depth=4,
-    min_samples_split=2,
-    min_samples_leaf=4,
+    max_depth=15,
+    n_estimators=160,
+    random_state=8,
     class_weight='balanced'
 )
 rf_model.fit(X_train, y_train)
