@@ -153,6 +153,10 @@ report = classification_report(y_test, y_pred)
 print('Classification Report:')
 print(report)
 
+scores = cross_val_score(rf_model, X, y, cv=5)
+print("CV Mean Accuracy:", scores.mean())
+
+# Saving model
 filename = 'rf_model.pkl'
 model_dir = '../model'
 os.makedirs(model_dir, exist_ok=True)
