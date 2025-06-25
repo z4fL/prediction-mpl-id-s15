@@ -32,7 +32,7 @@ const GridHeroes = ({ heroes, pick }) => {
   const sortedHeroes = heroes.sort((a, b) => a.name.localeCompare(b.name));
 
   return (
-    <div className="grid grid-cols-6 gap-6 place-items-center h-[23rem] pb-10 font-league-gothic text-2xl overflow-y-scroll no-scrollbar">
+    <div className="grid grid-cols-7 gap-6 place-items-center max-h-[23rem] pb-10 font-league-gothic text-2xl overflow-y-scroll no-scrollbar">
       {sortedHeroes.map((value) => (
         <div key={value.name} className="flex flex-col items-center">
           <img
@@ -108,7 +108,7 @@ const RoleSection = ({ active, setActive }) => {
   const roles = ["Tank", "Fighter", "Assassin", "Mage", "Marksman", "Support"];
 
   return (
-    <div className="flex justify-center items-center gap-3 font-league-gothic text-3xl text-center pb-2 select-none">
+    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center gap-3 flex-1 font-league-gothic text-3xl text-center select-none">
       {roles.map((role, index) => (
         <div
           key={index}
@@ -118,6 +118,26 @@ const RoleSection = ({ active, setActive }) => {
           onClick={() => setActive(active === role ? "" : role)}
         >
           {role}
+        </div>
+      ))}
+    </div>
+  );
+};
+
+const LaneSection = ({ active, setActive }) => {
+  const lanes = ["Exp Lane", "Jungle", "Mid Lane", "Gold Lane", "Roam"];
+
+  return (
+    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center gap-3 flex-1 font-league-gothic text-3xl text-center select-none">
+      {lanes.map((lane, index) => (
+        <div
+          key={index}
+          className={`${
+            active === lane ? "bg-gray-900" : "bg-gray-600"
+          } text-gray-50 w-36 py-1 cursor-pointer uppercase`}
+          onClick={() => setActive(active === lane ? "" : lane)}
+        >
+          {lane}
         </div>
       ))}
     </div>
@@ -183,7 +203,9 @@ const TeamSection = ({
 
 const App = () => {
   const [datapick, setDatapick] = useState({ blue: [], red: [] });
+  const [filter, setFilter] = useState("lane");
   const [activeRole, setActiveRole] = useState("");
+  const [activeLane, setActiveLane] = useState("");
   const [filteredHeroes, setFilteredHeroes] = useState([]);
   const [result, setResult] = useState({});
 
@@ -201,11 +223,16 @@ const App = () => {
   useEffect(() => {
     if (!heroes) return;
 
-    const filtered = activeRole
-      ? heroes.filter((hero) => hero.roles.includes(activeRole))
-      : heroes;
+    let filtered = heroes;
+
+    if (filter === "lane" && activeLane) {
+      filtered = filtered.filter((hero) => hero.lanes.includes(activeLane));
+    } else if (filter === "role" && activeRole) {
+      filtered = filtered.filter((hero) => hero.roles.includes(activeRole));
+    }
+
     setFilteredHeroes(filtered);
-  }, [activeRole, heroes]);
+  }, [heroes, filter, activeLane, activeRole]);
 
   const onclickHeroIcon = (name) => {
     setDatapick((prevDatapick) => {
@@ -370,8 +397,38 @@ const App = () => {
             setDatapick={setDatapick}
           />
         </div>
-        <div className="relative w-full max-w-4xl mx-auto py-3">
-          <RoleSection active={activeRole} setActive={setActiveRole} />
+        <div className="max-w-6xl mx-auto relative flex items-center justify-end py-3">
+          {filter === "role" ? (
+            <RoleSection active={activeRole} setActive={setActiveRole} />
+          ) : filter === "lane" ? (
+            <LaneSection active={activeLane} setActive={setActiveLane} />
+          ) : (
+            <></>
+          )}
+          <div
+            onClick={() =>
+              setFilter((prev) => (prev === "role" ? "lane" : "role"))
+            }
+            className="flex items-center justify-center gap-2 bg-gray-600 text-gray-50 py-1 px-3 cursor-pointer uppercase font-league-gothic text-3xl text-center select-none"
+          >
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              fill="none"
+              viewBox="0 0 24 24"
+              strokeWidth="1.5"
+              stroke="currentColor"
+              className="size-6"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                d="M12 3c2.755 0 5.455.232 8.083.678.533.09.917.556.917 1.096v1.044a2.25 2.25 0 0 1-.659 1.591l-5.432 5.432a2.25 2.25 0 0 0-.659 1.591v2.927a2.25 2.25 0 0 1-1.244 2.013L9.75 21v-6.568a2.25 2.25 0 0 0-.659-1.591L3.659 7.409A2.25 2.25 0 0 1 3 5.818V4.774c0-.54.384-1.006.917-1.096A48.32 48.32 0 0 1 12 3Z"
+              />
+            </svg>
+            <span>{filter === "role" ? "Role" : "Lane"}</span>
+          </div>
+        </div>
+        <div className="relative w-full max-w-4xl mx-auto">
           <div className="h-[23rem] pb-3">
             <GridHeroes heroes={filteredHeroes} pick={onclickHeroIcon} />
           </div>

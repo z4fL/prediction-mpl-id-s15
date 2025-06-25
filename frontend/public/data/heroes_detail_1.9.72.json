@@ -2,11 +2,18 @@
   {
     "id": 1,
     "name": "Miya",
+    "portrait": "images/1/portrait.png",
+    "icon": "images/1/icon.png",
     "roles": [
       "Marksman"
     ],
-    "portrait": "images/1/portrait.png",
-    "icon": "images/1/icon.png",
+    "lanes": [
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Finisher",
+      "Damage"
+    ],
     "durability": 10,
     "offense": 70,
     "control_effects": 40,
@@ -18,11 +25,19 @@
   {
     "id": 2,
     "name": "Balmond",
+    "portrait": "images/2/portrait.png",
+    "icon": "images/2/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/2/portrait.png",
-    "icon": "images/2/icon.png",
+    "lanes": [
+      "Jungle",
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Damage",
+      "Regen"
+    ],
     "durability": 80,
     "offense": 30,
     "control_effects": 20,
@@ -34,11 +49,19 @@
   {
     "id": 3,
     "name": "Saber",
+    "portrait": "images/3/portrait.png",
+    "icon": "images/3/icon.png",
     "roles": [
       "Assassin"
     ],
-    "portrait": "images/3/portrait.png",
-    "icon": "images/3/icon.png",
+    "lanes": [
+      "Jungle",
+      "Roam"
+    ],
+    "specialities": [
+      "Charge",
+      "Finisher"
+    ],
     "durability": 20,
     "offense": 60,
     "control_effects": 60,
@@ -50,12 +73,20 @@
   {
     "id": 4,
     "name": "Alice",
+    "portrait": "images/4/portrait.png",
+    "icon": "images/4/icon.png",
     "roles": [
       "Mage",
       "Tank"
     ],
-    "portrait": "images/4/portrait.png",
-    "icon": "images/4/icon.png",
+    "lanes": [
+      "Exp Lane",
+      "Jungle"
+    ],
+    "specialities": [
+      "Charge",
+      "Regen"
+    ],
     "durability": 50,
     "offense": 50,
     "control_effects": 70,
@@ -67,11 +98,18 @@
   {
     "id": 5,
     "name": "Nana",
+    "portrait": "images/5/portrait.png",
+    "icon": "images/5/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/5/portrait.png",
-    "icon": "images/5/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Poke",
+      "Burst"
+    ],
     "durability": 50,
     "offense": 60,
     "control_effects": 100,
@@ -83,11 +121,17 @@
   {
     "id": 6,
     "name": "Tigreal",
+    "portrait": "images/6/portrait.png",
+    "icon": "images/6/icon.png",
     "roles": [
       "Tank"
     ],
-    "portrait": "images/6/portrait.png",
-    "icon": "images/6/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Crowd Control"
+    ],
     "durability": 80,
     "offense": 10,
     "control_effects": 100,
@@ -99,12 +143,19 @@
   {
     "id": 7,
     "name": "Alucard",
+    "portrait": "images/7/portrait.png",
+    "icon": "images/7/icon.png",
     "roles": [
       "Fighter",
       "Assassin"
     ],
-    "portrait": "images/7/portrait.png",
-    "icon": "images/7/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Chase",
+      "Damage"
+    ],
     "durability": 50,
     "offense": 50,
     "control_effects": 10,
@@ -116,11 +167,18 @@
   {
     "id": 8,
     "name": "Karina",
+    "portrait": "images/8/portrait.png",
+    "icon": "images/8/icon.png",
     "roles": [
       "Assassin"
     ],
-    "portrait": "images/8/portrait.png",
-    "icon": "images/8/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Finisher",
+      "Magic Damage"
+    ],
     "durability": 50,
     "offense": 70,
     "control_effects": 10,
@@ -132,11 +190,18 @@
   {
     "id": 9,
     "name": "Akai",
+    "portrait": "images/9/portrait.png",
+    "icon": "images/9/icon.png",
     "roles": [
       "Tank"
     ],
-    "portrait": "images/9/portrait.png",
-    "icon": "images/9/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Guard",
+      "Crowd Control"
+    ],
     "durability": 90,
     "offense": 30,
     "control_effects": 90,
@@ -148,11 +213,18 @@
   {
     "id": 10,
     "name": "Franco",
+    "portrait": "images/10/portrait.png",
+    "icon": "images/10/icon.png",
     "roles": [
       "Tank"
     ],
-    "portrait": "images/10/portrait.png",
-    "icon": "images/10/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Initiator",
+      "Control"
+    ],
     "durability": 80,
     "offense": 10,
     "control_effects": 100,
@@ -164,12 +236,20 @@
   {
     "id": 11,
     "name": "Bane",
+    "portrait": "images/11/portrait.png",
+    "icon": "images/11/icon.png",
     "roles": [
       "Fighter",
       "Mage"
     ],
-    "portrait": "images/11/portrait.png",
-    "icon": "images/11/icon.png",
+    "lanes": [
+      "Jungle",
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Push",
+      "Burst"
+    ],
     "durability": 50,
     "offense": 60,
     "control_effects": 40,
@@ -181,11 +261,18 @@
   {
     "id": 12,
     "name": "Bruno",
+    "portrait": "images/12/portrait.png",
+    "icon": "images/12/icon.png",
     "roles": [
       "Marksman"
     ],
-    "portrait": "images/12/portrait.png",
-    "icon": "images/12/icon.png",
+    "lanes": [
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Finisher",
+      "Burst"
+    ],
     "durability": 20,
     "offense": 60,
     "control_effects": 20,
@@ -197,27 +284,41 @@
   {
     "id": 13,
     "name": "Clint",
+    "portrait": "images/13/portrait.png",
+    "icon": "images/13/icon.png",
     "roles": [
       "Marksman"
     ],
-    "portrait": "images/13/portrait.png",
-    "icon": "images/13/icon.png",
+    "lanes": [
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Finisher",
+      "Burst"
+    ],
     "durability": 30,
     "offense": 70,
     "control_effects": 40,
     "difficulty": 70,
-    "early": 0,
+    "early": 1,
     "mid": 1,
     "late": 0
   },
   {
     "id": 14,
     "name": "Rafaela",
+    "portrait": "images/14/portrait.png",
+    "icon": "images/14/icon.png",
     "roles": [
       "Support"
     ],
-    "portrait": "images/14/portrait.png",
-    "icon": "images/14/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Regen",
+      "Guard"
+    ],
     "durability": 60,
     "offense": 20,
     "control_effects": 70,
@@ -229,11 +330,18 @@
   {
     "id": 15,
     "name": "Eudora",
+    "portrait": "images/15/portrait.png",
+    "icon": "images/15/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/15/portrait.png",
-    "icon": "images/15/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Control",
+      "Burst"
+    ],
     "durability": 10,
     "offense": 80,
     "control_effects": 80,
@@ -245,12 +353,19 @@
   {
     "id": 16,
     "name": "Zilong",
+    "portrait": "images/16/portrait.png",
+    "icon": "images/16/icon.png",
     "roles": [
       "Fighter",
       "Assassin"
     ],
-    "portrait": "images/16/portrait.png",
-    "icon": "images/16/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Chase",
+      "Damage"
+    ],
     "durability": 20,
     "offense": 50,
     "control_effects": 60,
@@ -262,11 +377,18 @@
   {
     "id": 17,
     "name": "Fanny",
+    "portrait": "images/17/portrait.png",
+    "icon": "images/17/icon.png",
     "roles": [
       "Assassin"
     ],
-    "portrait": "images/17/portrait.png",
-    "icon": "images/17/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Chase",
+      "Finisher"
+    ],
     "durability": 60,
     "offense": 70,
     "control_effects": 10,
@@ -278,11 +400,18 @@
   {
     "id": 18,
     "name": "Layla",
+    "portrait": "images/18/portrait.png",
+    "icon": "images/18/icon.png",
     "roles": [
       "Marksman"
     ],
-    "portrait": "images/18/portrait.png",
-    "icon": "images/18/icon.png",
+    "lanes": [
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Finisher",
+      "Damage"
+    ],
     "durability": 10,
     "offense": 80,
     "control_effects": 10,
@@ -294,12 +423,18 @@
   {
     "id": 19,
     "name": "Minotaur",
+    "portrait": "images/19/portrait.png",
+    "icon": "images/19/icon.png",
     "roles": [
       "Tank",
       "Support"
     ],
-    "portrait": "images/19/portrait.png",
-    "icon": "images/19/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Crowd Control"
+    ],
     "durability": 100,
     "offense": 10,
     "control_effects": 80,
@@ -311,12 +446,19 @@
   {
     "id": 20,
     "name": "Lolita",
+    "portrait": "images/20/portrait.png",
+    "icon": "images/20/icon.png",
     "roles": [
       "Support",
       "Tank"
     ],
-    "portrait": "images/20/portrait.png",
-    "icon": "images/20/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Guard",
+      "Crowd Control"
+    ],
     "durability": 100,
     "offense": 10,
     "control_effects": 90,
@@ -328,11 +470,18 @@
   {
     "id": 21,
     "name": "Hayabusa",
+    "portrait": "images/21/portrait.png",
+    "icon": "images/21/icon.png",
     "roles": [
       "Assassin"
     ],
-    "portrait": "images/21/portrait.png",
-    "icon": "images/21/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Chase",
+      "Burst"
+    ],
     "durability": 40,
     "offense": 50,
     "control_effects": 10,
@@ -344,11 +493,19 @@
   {
     "id": 22,
     "name": "Freya",
+    "portrait": "images/22/portrait.png",
+    "icon": "images/22/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/22/portrait.png",
-    "icon": "images/22/icon.png",
+    "lanes": [
+      "Exp Lane",
+      "Jungle"
+    ],
+    "specialities": [
+      "Chase",
+      "Damage"
+    ],
     "durability": 60,
     "offense": 50,
     "control_effects": 50,
@@ -360,11 +517,18 @@
   {
     "id": 23,
     "name": "Gord",
+    "portrait": "images/23/portrait.png",
+    "icon": "images/23/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/23/portrait.png",
-    "icon": "images/23/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Poke",
+      "Burst"
+    ],
     "durability": 10,
     "offense": 70,
     "control_effects": 80,
@@ -376,27 +540,42 @@
   {
     "id": 24,
     "name": "Natalia",
+    "portrait": "images/24/portrait.png",
+    "icon": "images/24/icon.png",
     "roles": [
       "Assassin"
     ],
-    "portrait": "images/24/portrait.png",
-    "icon": "images/24/icon.png",
+    "lanes": [
+      "Jungle",
+      "Roam"
+    ],
+    "specialities": [
+      "Chase",
+      "Finisher"
+    ],
     "durability": 10,
     "offense": 60,
     "control_effects": 60,
     "difficulty": 90,
     "early": 0,
-    "mid": 0,
+    "mid": 1,
     "late": 1
   },
   {
     "id": 25,
     "name": "Kagura",
+    "portrait": "images/25/portrait.png",
+    "icon": "images/25/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/25/portrait.png",
-    "icon": "images/25/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Poke",
+      "Finisher"
+    ],
     "durability": 30,
     "offense": 90,
     "control_effects": 40,
@@ -408,11 +587,19 @@
   {
     "id": 26,
     "name": "Chou",
+    "portrait": "images/26/portrait.png",
+    "icon": "images/26/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/26/portrait.png",
-    "icon": "images/26/icon.png",
+    "lanes": [
+      "Exp Lane",
+      "Roam"
+    ],
+    "specialities": [
+      "Chase",
+      "Control"
+    ],
     "durability": 50,
     "offense": 30,
     "control_effects": 80,
@@ -424,11 +611,19 @@
   {
     "id": 27,
     "name": "Sun",
+    "portrait": "images/27/portrait.png",
+    "icon": "images/27/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/27/portrait.png",
-    "icon": "images/27/icon.png",
+    "lanes": [
+      "Exp Lane",
+      "Jungle"
+    ],
+    "specialities": [
+      "Push",
+      "Damage"
+    ],
     "durability": 50,
     "offense": 50,
     "control_effects": 10,
@@ -440,11 +635,19 @@
   {
     "id": 28,
     "name": "Alpha",
+    "portrait": "images/28/portrait.png",
+    "icon": "images/28/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/28/portrait.png",
-    "icon": "images/28/icon.png",
+    "lanes": [
+      "Jungle",
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Charge",
+      "Damage"
+    ],
     "durability": 60,
     "offense": 40,
     "control_effects": 70,
@@ -456,11 +659,18 @@
   {
     "id": 29,
     "name": "Ruby",
+    "portrait": "images/29/portrait.png",
+    "icon": "images/29/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/29/portrait.png",
-    "icon": "images/29/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Crowd Control",
+      "Regen"
+    ],
     "durability": 90,
     "offense": 20,
     "control_effects": 90,
@@ -472,28 +682,42 @@
   {
     "id": 30,
     "name": "Yi Sun-shin",
+    "portrait": "images/30/portrait.png",
+    "icon": "images/30/icon.png",
     "roles": [
       "Assassin",
       "Marksman"
     ],
-    "portrait": "images/30/portrait.png",
-    "icon": "images/30/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Finisher",
+      "Chase"
+    ],
     "durability": 40,
     "offense": 90,
     "control_effects": 40,
     "difficulty": 70,
     "early": 0,
-    "mid": 0,
+    "mid": 1,
     "late": 1
   },
   {
     "id": 31,
     "name": "Moskov",
+    "portrait": "images/31/portrait.png",
+    "icon": "images/31/icon.png",
     "roles": [
       "Marksman"
     ],
-    "portrait": "images/31/portrait.png",
-    "icon": "images/31/icon.png",
+    "lanes": [
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Finisher",
+      "Chase"
+    ],
     "durability": 20,
     "offense": 60,
     "control_effects": 60,
@@ -505,12 +729,19 @@
   {
     "id": 32,
     "name": "Johnson",
+    "portrait": "images/32/portrait.png",
+    "icon": "images/32/icon.png",
     "roles": [
       "Tank",
       "Support"
     ],
-    "portrait": "images/32/portrait.png",
-    "icon": "images/32/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Support",
+      "Crowd Control"
+    ],
     "durability": 80,
     "offense": 30,
     "control_effects": 90,
@@ -522,11 +753,18 @@
   {
     "id": 33,
     "name": "Cyclops",
+    "portrait": "images/33/portrait.png",
+    "icon": "images/33/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/33/portrait.png",
-    "icon": "images/33/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Damage",
+      "Control"
+    ],
     "durability": 30,
     "offense": 100,
     "control_effects": 70,
@@ -538,11 +776,18 @@
   {
     "id": 34,
     "name": "Estes",
+    "portrait": "images/34/portrait.png",
+    "icon": "images/34/icon.png",
     "roles": [
       "Support"
     ],
-    "portrait": "images/34/portrait.png",
-    "icon": "images/34/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Regen",
+      "Guard"
+    ],
     "durability": 70,
     "offense": 10,
     "control_effects": 20,
@@ -554,12 +799,20 @@
   {
     "id": 35,
     "name": "Hilda",
+    "portrait": "images/35/portrait.png",
+    "icon": "images/35/icon.png",
     "roles": [
       "Fighter",
       "Tank"
     ],
-    "portrait": "images/35/portrait.png",
-    "icon": "images/35/icon.png",
+    "lanes": [
+      "Roam",
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Damage",
+      "Regen"
+    ],
     "durability": 90,
     "offense": 40,
     "control_effects": 40,
@@ -571,11 +824,18 @@
   {
     "id": 36,
     "name": "Aurora",
+    "portrait": "images/36/portrait.png",
+    "icon": "images/36/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/36/portrait.png",
-    "icon": "images/36/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Crowd Control",
+      "Poke"
+    ],
     "durability": 40,
     "offense": 70,
     "control_effects": 100,
@@ -587,27 +847,41 @@
   {
     "id": 37,
     "name": "Lapu-Lapu",
+    "portrait": "images/37/portrait.png",
+    "icon": "images/37/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/37/portrait.png",
-    "icon": "images/37/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Chase",
+      "Burst"
+    ],
     "durability": 80,
     "offense": 40,
     "control_effects": 40,
     "difficulty": 50,
-    "early": 0,
+    "early": 1,
     "mid": 1,
     "late": 0
   },
   {
     "id": 38,
     "name": "Vexana",
+    "portrait": "images/38/portrait.png",
+    "icon": "images/38/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/38/portrait.png",
-    "icon": "images/38/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Poke",
+      "Control"
+    ],
     "durability": 20,
     "offense": 90,
     "control_effects": 50,
@@ -619,12 +893,19 @@
   {
     "id": 39,
     "name": "Roger",
+    "portrait": "images/39/portrait.png",
+    "icon": "images/39/icon.png",
     "roles": [
       "Fighter",
       "Marksman"
     ],
-    "portrait": "images/39/portrait.png",
-    "icon": "images/39/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Finisher",
+      "Burst"
+    ],
     "durability": 60,
     "offense": 40,
     "control_effects": 10,
@@ -636,11 +917,18 @@
   {
     "id": 40,
     "name": "Karrie",
+    "portrait": "images/40/portrait.png",
+    "icon": "images/40/icon.png",
     "roles": [
       "Marksman"
     ],
-    "portrait": "images/40/portrait.png",
-    "icon": "images/40/icon.png",
+    "lanes": [
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Finisher",
+      "Damage"
+    ],
     "durability": 30,
     "offense": 80,
     "control_effects": 10,
@@ -652,12 +940,20 @@
   {
     "id": 41,
     "name": "Gatotkaca",
+    "portrait": "images/41/portrait.png",
+    "icon": "images/41/icon.png",
     "roles": [
       "Tank",
       "Fighter"
     ],
-    "portrait": "images/41/portrait.png",
-    "icon": "images/41/icon.png",
+    "lanes": [
+      "Roam",
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Crowd Control",
+      "Burst"
+    ],
     "durability": 90,
     "offense": 30,
     "control_effects": 90,
@@ -669,12 +965,19 @@
   {
     "id": 42,
     "name": "Harley",
+    "portrait": "images/42/portrait.png",
+    "icon": "images/42/icon.png",
     "roles": [
       "Assassin",
       "Mage"
     ],
-    "portrait": "images/42/portrait.png",
-    "icon": "images/42/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Burst",
+      "Poke"
+    ],
     "durability": 30,
     "offense": 90,
     "control_effects": 10,
@@ -686,11 +989,18 @@
   {
     "id": 43,
     "name": "Irithel",
+    "portrait": "images/43/portrait.png",
+    "icon": "images/43/icon.png",
     "roles": [
       "Marksman"
     ],
-    "portrait": "images/43/portrait.png",
-    "icon": "images/43/icon.png",
+    "lanes": [
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Finisher",
+      "Burst"
+    ],
     "durability": 10,
     "offense": 80,
     "control_effects": 10,
@@ -702,12 +1012,19 @@
   {
     "id": 44,
     "name": "Grock",
+    "portrait": "images/44/portrait.png",
+    "icon": "images/44/icon.png",
     "roles": [
       "Tank",
       "Fighter"
     ],
-    "portrait": "images/44/portrait.png",
-    "icon": "images/44/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Crowd Control",
+      "Initiator"
+    ],
     "durability": 90,
     "offense": 40,
     "control_effects": 80,
@@ -719,11 +1036,18 @@
   {
     "id": 45,
     "name": "Argus",
+    "portrait": "images/45/portrait.png",
+    "icon": "images/45/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/45/portrait.png",
-    "icon": "images/45/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Charge",
+      "Burst"
+    ],
     "durability": 70,
     "offense": 50,
     "control_effects": 50,
@@ -735,11 +1059,18 @@
   {
     "id": 46,
     "name": "Odette",
+    "portrait": "images/46/portrait.png",
+    "icon": "images/46/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/46/portrait.png",
-    "icon": "images/46/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Burst",
+      "Poke"
+    ],
     "durability": 30,
     "offense": 100,
     "control_effects": 70,
@@ -751,11 +1082,18 @@
   {
     "id": 47,
     "name": "Lancelot",
+    "portrait": "images/47/portrait.png",
+    "icon": "images/47/icon.png",
     "roles": [
       "Assassin"
     ],
-    "portrait": "images/47/portrait.png",
-    "icon": "images/47/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Chase",
+      "Burst"
+    ],
     "durability": 40,
     "offense": 50,
     "control_effects": 10,
@@ -767,11 +1105,18 @@
   {
     "id": 48,
     "name": "Diggie",
+    "portrait": "images/48/portrait.png",
+    "icon": "images/48/icon.png",
     "roles": [
       "Support"
     ],
-    "portrait": "images/48/portrait.png",
-    "icon": "images/48/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Guard",
+      "Poke"
+    ],
     "durability": 40,
     "offense": 40,
     "control_effects": 20,
@@ -783,11 +1128,18 @@
   {
     "id": 49,
     "name": "Hylos",
+    "portrait": "images/49/portrait.png",
+    "icon": "images/49/icon.png",
     "roles": [
       "Tank"
     ],
-    "portrait": "images/49/portrait.png",
-    "icon": "images/49/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Guard",
+      "Initiator"
+    ],
     "durability": 100,
     "offense": 20,
     "control_effects": 80,
@@ -799,11 +1151,18 @@
   {
     "id": 50,
     "name": "Zhask",
+    "portrait": "images/50/portrait.png",
+    "icon": "images/50/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/50/portrait.png",
-    "icon": "images/50/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Chase",
+      "Damage"
+    ],
     "durability": 10,
     "offense": 100,
     "control_effects": 40,
@@ -815,11 +1174,18 @@
   {
     "id": 51,
     "name": "Helcurt",
+    "portrait": "images/51/portrait.png",
+    "icon": "images/51/icon.png",
     "roles": [
       "Assassin"
     ],
-    "portrait": "images/51/portrait.png",
-    "icon": "images/51/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Push",
+      "Burst"
+    ],
     "durability": 30,
     "offense": 50,
     "control_effects": 50,
@@ -831,11 +1197,18 @@
   {
     "id": 52,
     "name": "Pharsa",
+    "portrait": "images/52/portrait.png",
+    "icon": "images/52/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/52/portrait.png",
-    "icon": "images/52/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Burst",
+      "Poke"
+    ],
     "durability": 20,
     "offense": 90,
     "control_effects": 50,
@@ -847,12 +1220,19 @@
   {
     "id": 53,
     "name": "Lesley",
+    "portrait": "images/53/portrait.png",
+    "icon": "images/53/icon.png",
     "roles": [
       "Marksman",
       "Assassin"
     ],
-    "portrait": "images/53/portrait.png",
-    "icon": "images/53/icon.png",
+    "lanes": [
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Finisher",
+      "Burst"
+    ],
     "durability": 10,
     "offense": 70,
     "control_effects": 20,
@@ -864,11 +1244,19 @@
   {
     "id": 54,
     "name": "Jawhead",
+    "portrait": "images/54/portrait.png",
+    "icon": "images/54/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/54/portrait.png",
-    "icon": "images/54/icon.png",
+    "lanes": [
+      "Roam",
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Charge",
+      "Burst"
+    ],
     "durability": 60,
     "offense": 30,
     "control_effects": 60,
@@ -880,11 +1268,18 @@
   {
     "id": 55,
     "name": "Angela",
+    "portrait": "images/55/portrait.png",
+    "icon": "images/55/icon.png",
     "roles": [
       "Support"
     ],
-    "portrait": "images/55/portrait.png",
-    "icon": "images/55/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Guard",
+      "Support"
+    ],
     "durability": 30,
     "offense": 20,
     "control_effects": 50,
@@ -896,11 +1291,18 @@
   {
     "id": 56,
     "name": "Gusion",
+    "portrait": "images/56/portrait.png",
+    "icon": "images/56/icon.png",
     "roles": [
       "Assassin"
     ],
-    "portrait": "images/56/portrait.png",
-    "icon": "images/56/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Burst",
+      "Magic Damage"
+    ],
     "durability": 30,
     "offense": 90,
     "control_effects": 10,
@@ -912,11 +1314,18 @@
   {
     "id": 57,
     "name": "Valir",
+    "portrait": "images/57/portrait.png",
+    "icon": "images/57/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/57/portrait.png",
-    "icon": "images/57/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Damage",
+      "Guard"
+    ],
     "durability": 20,
     "offense": 70,
     "control_effects": 70,
@@ -928,11 +1337,18 @@
   {
     "id": 58,
     "name": "Martis",
+    "portrait": "images/58/portrait.png",
+    "icon": "images/58/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/58/portrait.png",
-    "icon": "images/58/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Finisher",
+      "Charge"
+    ],
     "durability": 60,
     "offense": 30,
     "control_effects": 50,
@@ -944,11 +1360,17 @@
   {
     "id": 59,
     "name": "Uranus",
+    "portrait": "images/59/portrait.png",
+    "icon": "images/59/icon.png",
     "roles": [
       "Tank"
     ],
-    "portrait": "images/59/portrait.png",
-    "icon": "images/59/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Regen"
+    ],
     "durability": 100,
     "offense": 20,
     "control_effects": 20,
@@ -960,11 +1382,18 @@
   {
     "id": 60,
     "name": "Hanabi",
+    "portrait": "images/60/portrait.png",
+    "icon": "images/60/icon.png",
     "roles": [
       "Marksman"
     ],
-    "portrait": "images/60/portrait.png",
-    "icon": "images/60/icon.png",
+    "lanes": [
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Finisher",
+      "Damage"
+    ],
     "durability": 20,
     "offense": 70,
     "control_effects": 80,
@@ -976,11 +1405,18 @@
   {
     "id": 61,
     "name": "Chang'e",
+    "portrait": "images/61/portrait.png",
+    "icon": "images/61/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/61/portrait.png",
-    "icon": "images/61/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Poke",
+      "Burst"
+    ],
     "durability": 40,
     "offense": 80,
     "control_effects": 20,
@@ -992,12 +1428,19 @@
   {
     "id": 62,
     "name": "Kaja",
+    "portrait": "images/62/portrait.png",
+    "icon": "images/62/icon.png",
     "roles": [
       "Support",
       "Fighter"
     ],
-    "portrait": "images/62/portrait.png",
-    "icon": "images/62/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Control",
+      "Charge"
+    ],
     "durability": 30,
     "offense": 20,
     "control_effects": 60,
@@ -1009,12 +1452,20 @@
   {
     "id": 63,
     "name": "Selena",
+    "portrait": "images/63/portrait.png",
+    "icon": "images/63/icon.png",
     "roles": [
       "Assassin",
       "Mage"
     ],
-    "portrait": "images/63/portrait.png",
-    "icon": "images/63/icon.png",
+    "lanes": [
+      "Mid Lane",
+      "Roam"
+    ],
+    "specialities": [
+      "Initiator",
+      "Finisher"
+    ],
     "durability": 30,
     "offense": 70,
     "control_effects": 100,
@@ -1026,11 +1477,18 @@
   {
     "id": 64,
     "name": "Aldous",
+    "portrait": "images/64/portrait.png",
+    "icon": "images/64/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/64/portrait.png",
-    "icon": "images/64/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Burst",
+      "Support"
+    ],
     "durability": 70,
     "offense": 30,
     "control_effects": 50,
@@ -1042,11 +1500,18 @@
   {
     "id": 65,
     "name": "Claude",
+    "portrait": "images/65/portrait.png",
+    "icon": "images/65/icon.png",
     "roles": [
       "Marksman"
     ],
-    "portrait": "images/65/portrait.png",
-    "icon": "images/65/icon.png",
+    "lanes": [
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Burst",
+      "Chase"
+    ],
     "durability": 30,
     "offense": 60,
     "control_effects": 10,
@@ -1058,27 +1523,41 @@
   {
     "id": 66,
     "name": "Vale",
+    "portrait": "images/66/portrait.png",
+    "icon": "images/66/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/66/portrait.png",
-    "icon": "images/66/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Burst",
+      "Crowd Control"
+    ],
     "durability": 20,
     "offense": 100,
     "control_effects": 70,
     "difficulty": 20,
     "early": 0,
     "mid": 1,
-    "late": 0
+    "late": 1
   },
   {
     "id": 67,
     "name": "Leomord",
+    "portrait": "images/67/portrait.png",
+    "icon": "images/67/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/67/portrait.png",
-    "icon": "images/67/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Chase",
+      "Burst"
+    ],
     "durability": 70,
     "offense": 50,
     "control_effects": 30,
@@ -1090,11 +1569,18 @@
   {
     "id": 68,
     "name": "Lunox",
+    "portrait": "images/68/portrait.png",
+    "icon": "images/68/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/68/portrait.png",
-    "icon": "images/68/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Burst",
+      "Damage"
+    ],
     "durability": 30,
     "offense": 90,
     "control_effects": 20,
@@ -1106,11 +1592,18 @@
   {
     "id": 69,
     "name": "Hanzo",
+    "portrait": "images/69/portrait.png",
+    "icon": "images/69/icon.png",
     "roles": [
       "Assassin"
     ],
-    "portrait": "images/69/portrait.png",
-    "icon": "images/69/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Poke",
+      "Burst"
+    ],
     "durability": 70,
     "offense": 80,
     "control_effects": 20,
@@ -1122,28 +1615,43 @@
   {
     "id": 70,
     "name": "Belerick",
+    "portrait": "images/70/portrait.png",
+    "icon": "images/70/icon.png",
     "roles": [
       "Tank"
     ],
-    "portrait": "images/70/portrait.png",
-    "icon": "images/70/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Crowd Control",
+      "Regen"
+    ],
     "durability": 90,
     "offense": 40,
     "control_effects": 100,
     "difficulty": 10,
     "early": 1,
-    "mid": 1,
+    "mid": 0,
     "late": 0
   },
   {
     "id": 71,
     "name": "Kimmy",
+    "portrait": "images/71/portrait.png",
+    "icon": "images/71/icon.png",
     "roles": [
       "Marksman",
       "Mage"
     ],
-    "portrait": "images/71/portrait.png",
-    "icon": "images/71/icon.png",
+    "lanes": [
+      "Gold Lane",
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Damage",
+      "Magic Damage"
+    ],
     "durability": 30,
     "offense": 80,
     "control_effects": 50,
@@ -1155,11 +1663,18 @@
   {
     "id": 72,
     "name": "Thamuz",
+    "portrait": "images/72/portrait.png",
+    "icon": "images/72/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/72/portrait.png",
-    "icon": "images/72/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Chase",
+      "Damage"
+    ],
     "durability": 70,
     "offense": 40,
     "control_effects": 20,
@@ -1171,11 +1686,19 @@
   {
     "id": 73,
     "name": "Harith",
+    "portrait": "images/73/portrait.png",
+    "icon": "images/73/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/73/portrait.png",
-    "icon": "images/73/icon.png",
+    "lanes": [
+      "Gold Lane",
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Chase",
+      "Damage"
+    ],
     "durability": 40,
     "offense": 50,
     "control_effects": 10,
@@ -1187,28 +1710,43 @@
   {
     "id": 74,
     "name": "Minsitthar",
+    "portrait": "images/74/portrait.png",
+    "icon": "images/74/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/74/portrait.png",
-    "icon": "images/74/icon.png",
+    "lanes": [
+      "Exp Lane",
+      "Roam"
+    ],
+    "specialities": [
+      "Initiator",
+      "Crowd Control"
+    ],
     "durability": 60,
     "offense": 40,
     "control_effects": 80,
     "difficulty": 40,
-    "early": 1,
-    "mid": 0,
-    "late": 0
+    "early": 0,
+    "mid": 1,
+    "late": 1
   },
   {
     "id": 75,
     "name": "Kadita",
+    "portrait": "images/75/portrait.png",
+    "icon": "images/75/icon.png",
     "roles": [
       "Mage",
       "Assassin"
     ],
-    "portrait": "images/75/portrait.png",
-    "icon": "images/75/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Burst",
+      "Charge"
+    ],
     "durability": 40,
     "offense": 80,
     "control_effects": 80,
@@ -1220,12 +1758,19 @@
   {
     "id": 76,
     "name": "Faramis",
+    "portrait": "images/76/portrait.png",
+    "icon": "images/76/icon.png",
     "roles": [
       "Support",
       "Mage"
     ],
-    "portrait": "images/76/portrait.png",
-    "icon": "images/76/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Guard",
+      "Charge"
+    ],
     "durability": 40,
     "offense": 60,
     "control_effects": 10,
@@ -1237,27 +1782,41 @@
   {
     "id": 77,
     "name": "Badang",
+    "portrait": "images/77/portrait.png",
+    "icon": "images/77/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/77/portrait.png",
-    "icon": "images/77/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Charge",
+      "Burst"
+    ],
     "durability": 40,
     "offense": 70,
     "control_effects": 50,
     "difficulty": 10,
     "early": 1,
-    "mid": 0,
+    "mid": 1,
     "late": 0
   },
   {
     "id": 78,
     "name": "Khufra",
+    "portrait": "images/78/portrait.png",
+    "icon": "images/78/icon.png",
     "roles": [
       "Tank"
     ],
-    "portrait": "images/78/portrait.png",
-    "icon": "images/78/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Initiator",
+      "Crowd Control"
+    ],
     "durability": 90,
     "offense": 20,
     "control_effects": 100,
@@ -1269,11 +1828,18 @@
   {
     "id": 79,
     "name": "Granger",
+    "portrait": "images/79/portrait.png",
+    "icon": "images/79/icon.png",
     "roles": [
       "Marksman"
     ],
-    "portrait": "images/79/portrait.png",
-    "icon": "images/79/icon.png",
+    "lanes": [
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Burst",
+      "Finisher"
+    ],
     "durability": 30,
     "offense": 70,
     "control_effects": 10,
@@ -1285,11 +1851,18 @@
   {
     "id": 80,
     "name": "Guinevere",
+    "portrait": "images/80/portrait.png",
+    "icon": "images/80/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/80/portrait.png",
-    "icon": "images/80/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Burst",
+      "Magic Damage"
+    ],
     "durability": 40,
     "offense": 50,
     "control_effects": 70,
@@ -1301,12 +1874,19 @@
   {
     "id": 81,
     "name": "Esmeralda",
+    "portrait": "images/81/portrait.png",
+    "icon": "images/81/icon.png",
     "roles": [
       "Tank",
       "Mage"
     ],
-    "portrait": "images/81/portrait.png",
-    "icon": "images/81/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Regen",
+      "Mixed Damage"
+    ],
     "durability": 90,
     "offense": 30,
     "control_effects": 60,
@@ -1318,12 +1898,19 @@
   {
     "id": 82,
     "name": "Terizla",
+    "portrait": "images/82/portrait.png",
+    "icon": "images/82/icon.png",
     "roles": [
       "Fighter",
       "Tank"
     ],
-    "portrait": "images/82/portrait.png",
-    "icon": "images/82/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Burst",
+      "Crowd Control"
+    ],
     "durability": 90,
     "offense": 30,
     "control_effects": 40,
@@ -1335,11 +1922,18 @@
   {
     "id": 83,
     "name": "X.Borg",
+    "portrait": "images/83/portrait.png",
+    "icon": "images/83/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/83/portrait.png",
-    "icon": "images/83/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Regen",
+      "Burst"
+    ],
     "durability": 80,
     "offense": 30,
     "control_effects": 10,
@@ -1351,11 +1945,18 @@
   {
     "id": 84,
     "name": "Ling",
+    "portrait": "images/84/portrait.png",
+    "icon": "images/84/icon.png",
     "roles": [
       "Assassin"
     ],
-    "portrait": "images/84/portrait.png",
-    "icon": "images/84/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Chase",
+      "Burst"
+    ],
     "durability": 50,
     "offense": 60,
     "control_effects": 30,
@@ -1367,11 +1968,19 @@
   {
     "id": 85,
     "name": "Dyrroth",
+    "portrait": "images/85/portrait.png",
+    "icon": "images/85/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/85/portrait.png",
-    "icon": "images/85/icon.png",
+    "lanes": [
+      "Exp Lane",
+      "Jungle"
+    ],
+    "specialities": [
+      "Charge",
+      "Burst"
+    ],
     "durability": 50,
     "offense": 50,
     "control_effects": 20,
@@ -1383,27 +1992,41 @@
   {
     "id": 86,
     "name": "Lylia",
+    "portrait": "images/86/portrait.png",
+    "icon": "images/86/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/86/portrait.png",
-    "icon": "images/86/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Push",
+      "Damage"
+    ],
     "durability": 50,
     "offense": 100,
     "control_effects": 20,
     "difficulty": 50,
-    "early": 0,
+    "early": 1,
     "mid": 1,
     "late": 0
   },
   {
     "id": 87,
     "name": "Baxia",
+    "portrait": "images/87/portrait.png",
+    "icon": "images/87/icon.png",
     "roles": [
       "Tank"
     ],
-    "portrait": "images/87/portrait.png",
-    "icon": "images/87/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Support",
+      "Damage"
+    ],
     "durability": 100,
     "offense": 30,
     "control_effects": 60,
@@ -1415,12 +2038,19 @@
   {
     "id": 88,
     "name": "Masha",
+    "portrait": "images/88/portrait.png",
+    "icon": "images/88/icon.png",
     "roles": [
       "Fighter",
       "Tank"
     ],
-    "portrait": "images/88/portrait.png",
-    "icon": "images/88/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Push",
+      "Damage"
+    ],
     "durability": 50,
     "offense": 70,
     "control_effects": 30,
@@ -1432,11 +2062,18 @@
   {
     "id": 89,
     "name": "Wanwan",
+    "portrait": "images/89/portrait.png",
+    "icon": "images/89/icon.png",
     "roles": [
       "Marksman"
     ],
-    "portrait": "images/89/portrait.png",
-    "icon": "images/89/icon.png",
+    "lanes": [
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Finisher",
+      "Burst"
+    ],
     "durability": 20,
     "offense": 60,
     "control_effects": 30,
@@ -1448,11 +2085,18 @@
   {
     "id": 90,
     "name": "Silvanna",
+    "portrait": "images/90/portrait.png",
+    "icon": "images/90/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/90/portrait.png",
-    "icon": "images/90/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Initiator",
+      "Magic Damage"
+    ],
     "durability": 50,
     "offense": 40,
     "control_effects": 70,
@@ -1464,11 +2108,18 @@
   {
     "id": 91,
     "name": "Cecilion",
+    "portrait": "images/91/portrait.png",
+    "icon": "images/91/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/91/portrait.png",
-    "icon": "images/91/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Poke",
+      "Burst"
+    ],
     "durability": 40,
     "offense": 100,
     "control_effects": 50,
@@ -1480,12 +2131,19 @@
   {
     "id": 92,
     "name": "Carmilla",
+    "portrait": "images/92/portrait.png",
+    "icon": "images/92/icon.png",
     "roles": [
       "Support",
       "Tank"
     ],
-    "portrait": "images/92/portrait.png",
-    "icon": "images/92/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Crowd Control",
+      "Damage"
+    ],
     "durability": 90,
     "offense": 20,
     "control_effects": 80,
@@ -1497,11 +2155,18 @@
   {
     "id": 93,
     "name": "Atlas",
+    "portrait": "images/93/portrait.png",
+    "icon": "images/93/icon.png",
     "roles": [
       "Tank"
     ],
-    "portrait": "images/93/portrait.png",
-    "icon": "images/93/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Crowd Control",
+      "Initiator"
+    ],
     "durability": 80,
     "offense": 10,
     "control_effects": 90,
@@ -1513,11 +2178,19 @@
   {
     "id": 94,
     "name": "Popol and Kupa",
+    "portrait": "images/94/portrait.png",
+    "icon": "images/94/icon.png",
     "roles": [
       "Marksman"
     ],
-    "portrait": "images/94/portrait.png",
-    "icon": "images/94/icon.png",
+    "lanes": [
+      "Jungle",
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Push",
+      "Burst"
+    ],
     "durability": 30,
     "offense": 70,
     "control_effects": 70,
@@ -1529,11 +2202,18 @@
   {
     "id": 95,
     "name": "Yu Zhong",
+    "portrait": "images/95/portrait.png",
+    "icon": "images/95/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/95/portrait.png",
-    "icon": "images/95/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Regen",
+      "Damage"
+    ],
     "durability": 70,
     "offense": 40,
     "control_effects": 70,
@@ -1545,28 +2225,42 @@
   {
     "id": 96,
     "name": "Luo Yi",
+    "portrait": "images/96/portrait.png",
+    "icon": "images/96/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/96/portrait.png",
-    "icon": "images/96/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Support",
+      "Crowd Control"
+    ],
     "durability": 20,
     "offense": 100,
     "control_effects": 40,
     "difficulty": 50,
-    "early": 0,
+    "early": 1,
     "mid": 1,
     "late": 1
   },
   {
     "id": 97,
     "name": "Benedetta",
+    "portrait": "images/97/portrait.png",
+    "icon": "images/97/icon.png",
     "roles": [
       "Assassin",
       "Fighter"
     ],
-    "portrait": "images/97/portrait.png",
-    "icon": "images/97/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Chase",
+      "Burst"
+    ],
     "durability": 60,
     "offense": 50,
     "control_effects": 20,
@@ -1578,11 +2272,19 @@
   {
     "id": 98,
     "name": "Khaleed",
+    "portrait": "images/98/portrait.png",
+    "icon": "images/98/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/98/portrait.png",
-    "icon": "images/98/icon.png",
+    "lanes": [
+      "Exp Lane",
+      "Roam"
+    ],
+    "specialities": [
+      "Damage",
+      "Regen"
+    ],
     "durability": 80,
     "offense": 50,
     "control_effects": 50,
@@ -1594,12 +2296,19 @@
   {
     "id": 99,
     "name": "Barats",
+    "portrait": "images/99/portrait.png",
+    "icon": "images/99/icon.png",
     "roles": [
       "Tank",
       "Fighter"
     ],
-    "portrait": "images/99/portrait.png",
-    "icon": "images/99/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Damage",
+      "Crowd Control"
+    ],
     "durability": 100,
     "offense": 30,
     "control_effects": 90,
@@ -1611,11 +2320,18 @@
   {
     "id": 100,
     "name": "Brody",
+    "portrait": "images/100/portrait.png",
+    "icon": "images/100/icon.png",
     "roles": [
       "Marksman"
     ],
-    "portrait": "images/100/portrait.png",
-    "icon": "images/100/icon.png",
+    "lanes": [
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Burst",
+      "Finisher"
+    ],
     "durability": 40,
     "offense": 70,
     "control_effects": 50,
@@ -1627,28 +2343,42 @@
   {
     "id": 101,
     "name": "Yve",
+    "portrait": "images/101/portrait.png",
+    "icon": "images/101/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/101/portrait.png",
-    "icon": "images/101/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Poke",
+      "Burst"
+    ],
     "durability": 40,
     "offense": 80,
     "control_effects": 40,
     "difficulty": 70,
     "early": 0,
     "mid": 1,
-    "late": 0
+    "late": 1
   },
   {
     "id": 102,
     "name": "Mathilda",
+    "portrait": "images/102/portrait.png",
+    "icon": "images/102/icon.png",
     "roles": [
       "Support",
       "Assassin"
     ],
-    "portrait": "images/102/portrait.png",
-    "icon": "images/102/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Initiator",
+      "Guard"
+    ],
     "durability": 80,
     "offense": 20,
     "control_effects": 40,
@@ -1660,12 +2390,19 @@
   {
     "id": 103,
     "name": "Paquito",
+    "portrait": "images/103/portrait.png",
+    "icon": "images/103/icon.png",
     "roles": [
       "Fighter",
       "Assassin"
     ],
-    "portrait": "images/103/portrait.png",
-    "icon": "images/103/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Chase",
+      "Damage"
+    ],
     "durability": 60,
     "offense": 50,
     "control_effects": 40,
@@ -1677,11 +2414,19 @@
   {
     "id": 104,
     "name": "Gloo",
+    "portrait": "images/104/portrait.png",
+    "icon": "images/104/icon.png",
     "roles": [
       "Tank"
     ],
-    "portrait": "images/104/portrait.png",
-    "icon": "images/104/icon.png",
+    "lanes": [
+      "Exp Lane",
+      "Roam"
+    ],
+    "specialities": [
+      "Regen",
+      "Control"
+    ],
     "durability": 100,
     "offense": 30,
     "control_effects": 100,
@@ -1693,11 +2438,18 @@
   {
     "id": 105,
     "name": "Beatrix",
+    "portrait": "images/105/portrait.png",
+    "icon": "images/105/icon.png",
     "roles": [
       "Marksman"
     ],
-    "portrait": "images/105/portrait.png",
-    "icon": "images/105/icon.png",
+    "lanes": [
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Finisher",
+      "Damage"
+    ],
     "durability": 30,
     "offense": 80,
     "control_effects": 10,
@@ -1709,11 +2461,18 @@
   {
     "id": 106,
     "name": "Phoveus",
+    "portrait": "images/106/portrait.png",
+    "icon": "images/106/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/106/portrait.png",
-    "icon": "images/106/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Regen",
+      "Damage"
+    ],
     "durability": 60,
     "offense": 80,
     "control_effects": 50,
@@ -1725,11 +2484,18 @@
   {
     "id": 107,
     "name": "Natan",
+    "portrait": "images/107/portrait.png",
+    "icon": "images/107/icon.png",
     "roles": [
       "Marksman"
     ],
-    "portrait": "images/107/portrait.png",
-    "icon": "images/107/icon.png",
+    "lanes": [
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Burst",
+      "Magic Damage"
+    ],
     "durability": 20,
     "offense": 60,
     "control_effects": 20,
@@ -1741,11 +2507,18 @@
   {
     "id": 108,
     "name": "Aulus",
+    "portrait": "images/108/portrait.png",
+    "icon": "images/108/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/108/portrait.png",
-    "icon": "images/108/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Damage",
+      "Crowd Control"
+    ],
     "durability": 60,
     "offense": 60,
     "control_effects": 10,
@@ -1757,11 +2530,18 @@
   {
     "id": 109,
     "name": "Aamon",
+    "portrait": "images/109/portrait.png",
+    "icon": "images/109/icon.png",
     "roles": [
       "Assassin"
     ],
-    "portrait": "images/109/portrait.png",
-    "icon": "images/109/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Chase",
+      "Magic Damage"
+    ],
     "durability": 30,
     "offense": 70,
     "control_effects": 10,
@@ -1773,11 +2553,18 @@
   {
     "id": 110,
     "name": "Valentina",
+    "portrait": "images/110/portrait.png",
+    "icon": "images/110/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/110/portrait.png",
-    "icon": "images/110/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Burst",
+      "Finisher"
+    ],
     "durability": 50,
     "offense": 90,
     "control_effects": 80,
@@ -1789,12 +2576,20 @@
   {
     "id": 111,
     "name": "Edith",
+    "portrait": "images/111/portrait.png",
+    "icon": "images/111/icon.png",
     "roles": [
       "Tank",
       "Marksman"
     ],
-    "portrait": "images/111/portrait.png",
-    "icon": "images/111/icon.png",
+    "lanes": [
+      "Exp Lane",
+      "Roam"
+    ],
+    "specialities": [
+      "Control",
+      "Burst"
+    ],
     "durability": 70,
     "offense": 30,
     "control_effects": 100,
@@ -1806,11 +2601,18 @@
   {
     "id": 112,
     "name": "Floryn",
+    "portrait": "images/112/portrait.png",
+    "icon": "images/112/icon.png",
     "roles": [
       "Support"
     ],
-    "portrait": "images/112/portrait.png",
-    "icon": "images/112/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Poke",
+      "Guard"
+    ],
     "durability": 60,
     "offense": 10,
     "control_effects": 70,
@@ -1822,12 +2624,20 @@
   {
     "id": 113,
     "name": "Yin",
+    "portrait": "images/113/portrait.png",
+    "icon": "images/113/icon.png",
     "roles": [
       "Fighter",
       "Assassin"
     ],
-    "portrait": "images/113/portrait.png",
-    "icon": "images/113/icon.png",
+    "lanes": [
+      "Jungle",
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Burst",
+      "Control"
+    ],
     "durability": 50,
     "offense": 60,
     "control_effects": 80,
@@ -1839,11 +2649,18 @@
   {
     "id": 114,
     "name": "Melissa",
+    "portrait": "images/114/portrait.png",
+    "icon": "images/114/icon.png",
     "roles": [
       "Marksman"
     ],
-    "portrait": "images/114/portrait.png",
-    "icon": "images/114/icon.png",
+    "lanes": [
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Finisher",
+      "Damage"
+    ],
     "durability": 20,
     "offense": 90,
     "control_effects": 40,
@@ -1855,11 +2672,18 @@
   {
     "id": 115,
     "name": "Xavier",
+    "portrait": "images/115/portrait.png",
+    "icon": "images/115/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/115/portrait.png",
-    "icon": "images/115/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Damage",
+      "Burst"
+    ],
     "durability": 20,
     "offense": 100,
     "control_effects": 80,
@@ -1871,12 +2695,19 @@
   {
     "id": 116,
     "name": "Julian",
+    "portrait": "images/116/portrait.png",
+    "icon": "images/116/icon.png",
     "roles": [
       "Assassin",
       "Fighter"
     ],
-    "portrait": "images/116/portrait.png",
-    "icon": "images/116/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Chase",
+      "Magic Damage"
+    ],
     "durability": 60,
     "offense": 60,
     "control_effects": 70,
@@ -1888,12 +2719,19 @@
   {
     "id": 117,
     "name": "Fredrinn",
+    "portrait": "images/117/portrait.png",
+    "icon": "images/117/icon.png",
     "roles": [
       "Fighter",
       "Tank"
     ],
-    "portrait": "images/117/portrait.png",
-    "icon": "images/117/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Damage",
+      "Chase"
+    ],
     "durability": 80,
     "offense": 50,
     "control_effects": 60,
@@ -1905,11 +2743,18 @@
   {
     "id": 118,
     "name": "Joy",
+    "portrait": "images/118/portrait.png",
+    "icon": "images/118/icon.png",
     "roles": [
       "Assassin"
     ],
-    "portrait": "images/118/portrait.png",
-    "icon": "images/118/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Chase",
+      "Damage"
+    ],
     "durability": 30,
     "offense": 70,
     "control_effects": 10,
@@ -1921,11 +2766,18 @@
   {
     "id": 119,
     "name": "Novaria",
+    "portrait": "images/119/portrait.png",
+    "icon": "images/119/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/119/portrait.png",
-    "icon": "images/119/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Burst",
+      "Poke"
+    ],
     "durability": 30,
     "offense": 90,
     "control_effects": 30,
@@ -1937,12 +2789,19 @@
   {
     "id": 120,
     "name": "Arlott",
+    "portrait": "images/120/portrait.png",
+    "icon": "images/120/icon.png",
     "roles": [
       "Fighter",
       "Assassin"
     ],
-    "portrait": "images/120/portrait.png",
-    "icon": "images/120/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Charge",
+      "Burst"
+    ],
     "durability": 60,
     "offense": 60,
     "control_effects": 50,
@@ -1954,11 +2813,18 @@
   {
     "id": 121,
     "name": "Ixia",
+    "portrait": "images/121/portrait.png",
+    "icon": "images/121/icon.png",
     "roles": [
       "Marksman"
     ],
-    "portrait": "images/121/portrait.png",
-    "icon": "images/121/icon.png",
+    "lanes": [
+      "Gold Lane"
+    ],
+    "specialities": [
+      "Finisher",
+      "Damage"
+    ],
     "durability": 30,
     "offense": 70,
     "control_effects": 50,
@@ -1970,11 +2836,18 @@
   {
     "id": 122,
     "name": "Nolan",
+    "portrait": "images/122/portrait.png",
+    "icon": "images/122/icon.png",
     "roles": [
       "Assassin"
     ],
-    "portrait": "images/122/portrait.png",
-    "icon": "images/122/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Chase",
+      "Burst"
+    ],
     "durability": 30,
     "offense": 60,
     "control_effects": 20,
@@ -1986,28 +2859,42 @@
   {
     "id": 123,
     "name": "Cici",
+    "portrait": "images/123/portrait.png",
+    "icon": "images/123/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/123/portrait.png",
-    "icon": "images/123/icon.png",
+    "lanes": [
+      "Exp Lane"
+    ],
+    "specialities": [
+      "Damage",
+      "Regen"
+    ],
     "durability": 50,
     "offense": 60,
     "control_effects": 30,
     "difficulty": 20,
-    "early": 0,
+    "early": 1,
     "mid": 1,
     "late": 0
   },
   {
     "id": 124,
     "name": "Chip",
+    "portrait": "images/124/portrait.png",
+    "icon": "images/124/icon.png",
     "roles": [
       "Support",
       "Tank"
     ],
-    "portrait": "images/124/portrait.png",
-    "icon": "images/124/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Support",
+      "Crowd Control"
+    ],
     "durability": 80,
     "offense": 20,
     "control_effects": 60,
@@ -2019,11 +2906,18 @@
   {
     "id": 125,
     "name": "Zhuxin",
+    "portrait": "images/125/portrait.png",
+    "icon": "images/125/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/125/portrait.png",
-    "icon": "images/125/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Damage",
+      "Crowd Control"
+    ],
     "durability": 40,
     "offense": 70,
     "control_effects": 90,
@@ -2035,12 +2929,19 @@
   {
     "id": 126,
     "name": "Suyou",
+    "portrait": "images/126/portrait.png",
+    "icon": "images/126/icon.png",
     "roles": [
       "Assassin",
       "Fighter"
     ],
-    "portrait": "images/126/portrait.png",
-    "icon": "images/126/icon.png",
+    "lanes": [
+      "Jungle"
+    ],
+    "specialities": [
+      "Chase",
+      "Burst"
+    ],
     "durability": 60,
     "offense": 60,
     "control_effects": 50,
@@ -2052,28 +2953,43 @@
   {
     "id": 127,
     "name": "Lukas",
+    "portrait": "images/127/portrait.png",
+    "icon": "images/127/icon.png",
     "roles": [
       "Fighter"
     ],
-    "portrait": "images/127/portrait.png",
-    "icon": "images/127/icon.png",
+    "lanes": [
+      "Exp Lane",
+      "Jungle"
+    ],
+    "specialities": [
+      "Regen",
+      "Damage"
+    ],
     "durability": 70,
     "offense": 50,
     "control_effects": 60,
     "difficulty": 30,
-    "early": 0,
+    "early": 1,
     "mid": 1,
     "late": 0
   },
   {
     "id": 128,
     "name": "Kalea",
+    "portrait": "images/128/portrait.png",
+    "icon": "images/128/icon.png",
     "roles": [
       "Support",
       "Fighter"
     ],
-    "portrait": "images/128/portrait.png",
-    "icon": "images/128/icon.png",
+    "lanes": [
+      "Roam"
+    ],
+    "specialities": [
+      "Control",
+      "Regen"
+    ],
     "durability": 60,
     "offense": 20,
     "control_effects": 90,
@@ -2085,11 +3001,18 @@
   {
     "id": 129,
     "name": "Zetian",
+    "portrait": "images/129/portrait.png",
+    "icon": "images/129/icon.png",
     "roles": [
       "Mage"
     ],
-    "portrait": "images/129/portrait.png",
-    "icon": "images/129/icon.png",
+    "lanes": [
+      "Mid Lane"
+    ],
+    "specialities": [
+      "Damage",
+      "Crowd Control"
+    ],
     "durability": 40,
     "offense": 70,
     "control_effects": 50,
