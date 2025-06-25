@@ -39,6 +39,7 @@ const GridHeroes = ({ heroes, pick }) => {
             src={`${"/" + value.icon}`}
             className="w-16 h-16 cursor-pointer"
             onClick={() => pick(value.name)}
+            loading="lazy"
           />
           <div className="">{value.name}</div>
         </div>
@@ -55,12 +56,12 @@ const MidSection = ({ predict, result, setResult, setDatapick }) => {
 
   return (
     <>
-      <div className="absolute left-1/2 transform -translate-x-1/2 top-14 z-10 flex flex-col justify-center items-center">
+      <div className="absolute left-1/2 transform -translate-x-1/2 top-10 z-10 flex flex-col justify-center items-center">
         {Object.keys(result).length === 0 && !result.error ? (
           <div className="font-bebas-neue text-white text-6xl mb-5">VS</div>
         ) : (
           <button
-            className="relative z-10 w-14 h-14 p-2 flex justify-center bg-slate-800 text-gray-300 rounded-full hover:text-gray-200 active:text-gray-50 focus:outline-none"
+            className="relative z-10 w-14 h-14 p-3 flex justify-center bg-slate-800 rounded-full text-gray-300 hover:text-gray-200 active:text-gray-50 focus:outline-none"
             onClick={handleReset}
           >
             <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512">
@@ -75,7 +76,7 @@ const MidSection = ({ predict, result, setResult, setDatapick }) => {
 
       {Object.keys(result).length > 0 && !result.error && (
         <div className="absolute left-1/2 transform -translate-x-1/2 z-10 bottom-22 flex flex-col justify-center items-center">
-          <div className="flex gap-7 font-bebas-neue text-slate-900 text-2xl">
+          <div className="flex gap-10 font-bebas-neue text-slate-50 text-2xl">
             <span>{result.blue_chance}%</span>
             <span>{result.red_chance}%</span>
           </div>
@@ -84,20 +85,11 @@ const MidSection = ({ predict, result, setResult, setDatapick }) => {
 
       <div className="absolute z-10 bottom-8 left-1/2 transform -translate-x-1/2">
         <button
-          className="relative z-10 w-14 h-14 p-3 flex justify-center bg-slate-800 rounded-full text-gray-300 hover:text-gray-200 active:text-gray-50 focus:outline-none cursor-pointer"
+          className="relative z-10 px-4 py-1.5 flex justify-center bg-slate-800 font-bebas-neue text-3xl text-gray-100 hover:text-gray-300 active:text-gray-50 focus:outline-none cursor-pointer"
           id="Brain"
           onClick={predict}
         >
-          <svg
-            xmlns="http://www.w3.org/2000/svg"
-            viewBox="0 0 512 512"
-            className="w-7 h-7"
-          >
-            <path
-              fill="currentColor"
-              d="M184 0c30.9 0 56 25.1 56 56l0 400c0 30.9-25.1 56-56 56c-28.9 0-52.7-21.9-55.7-50.1c-5.2 1.4-10.7 2.1-16.3 2.1c-35.3 0-64-28.7-64-64c0-7.4 1.3-14.6 3.6-21.2C21.4 367.4 0 338.2 0 304c0-31.9 18.7-59.5 45.8-72.3C37.1 220.8 32 207 32 192c0-30.7 21.6-56.3 50.4-62.6C80.8 123.9 80 118 80 112c0-29.9 20.6-55.1 48.3-62.1C131.3 21.9 155.1 0 184 0zM328 0c28.9 0 52.6 21.9 55.7 49.9c27.8 7 48.3 32.1 48.3 62.1c0 6-.8 11.9-2.4 17.4c28.8 6.2 50.4 31.9 50.4 62.6c0 15-5.1 28.8-13.8 39.7C493.3 244.5 512 272.1 512 304c0 34.2-21.4 63.4-51.6 74.8c2.3 6.6 3.6 13.8 3.6 21.2c0 35.3-28.7 64-64 64c-5.6 0-11.1-.7-16.3-2.1c-3 28.2-26.8 50.1-55.7 50.1c-30.9 0-56-25.1-56-56l0-400c0-30.9 25.1-56 56-56z"
-            />
-          </svg>
+          Prediction
         </button>
       </div>
     </>
@@ -160,38 +152,44 @@ const TeamSection = ({
     >
       <div
         className={`grid grid-cols-5 justify-start font-bebas-neue text-2xl text-[#fdfdfd] text-center ${
-          side === "blue" ? "pr-20" : "pl-20"
+          side === "blue" ? "pr-24" : "pl-24"
         }`}
       >
-        {positions.map((value, index) => {
+        {positions.map((position, index) => {
           const hero = pickedHeroes[index];
           const heroData = hero ? heroes.find((h) => h.name === hero) : null;
 
           return (
             <div
-              key={`${value.name + side}`}
-              side-data={`${value.name + "-" + side}`}
+              key={`${position.name + side}`}
+              side-data={`${position.name + "-" + side}`}
               onClick={() => removeHero(side, index)}
               className="cursor-pointer"
             >
-              <div className="w-full h-[182px] bg-gray-900 flex justify-center items-center">
-                {heroData ? (
-                  <img
-                    src={`${"/" + heroData.portrait}`}
-                    className="w-full h-auto"
-                  />
-                ) : (
-                  <img src={`${"/" + value.icon}`} className="w-20 h-20" />
+              <div className="relative w-full h-[176px] bg-gray-900 flex justify-center items-center">
+                {heroData && (
+                  <div className="absolute">
+                    <img
+                      src={`${"/" + heroData.portrait}`}
+                      className="w-full h-auto"
+                    />
+                    <img
+                      src={`${"/" + position.icon}`}
+                      className="absolute top-1.5 left-1.5 w-8 h-8 opacity-80"
+                      style={{ zIndex: 2 }}
+                    />
+                  </div>
                 )}
+                <img src={`${"/" + position.icon}`} className="w-20 h-20" />
               </div>
               <div
                 className={`py-2 ${
                   side === win || win === ""
                     ? "text-slate-900"
-                    : "text-slate-300"
+                    : "text-slate-200"
                 }`}
               >
-                {heroData ? heroData.name : value.name}
+                {heroData ? heroData.name : position.name}
               </div>
             </div>
           );

@@ -3,7 +3,7 @@
     <style>
       .cls-1 {
         fill-rule: evenodd;
-        fill: url(#linear-gradient);
+        fill: #ffffff;
       }
     </style>
     <linearGradient id="linear-gradient" x1="89.578" y1="1338.5" x2="89.578" y2="1290.5" gradientUnits="userSpaceOnUse">
