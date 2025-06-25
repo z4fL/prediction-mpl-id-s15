@@ -32,16 +32,16 @@ const GridHeroes = ({ heroes, pick }) => {
   const sortedHeroes = heroes.sort((a, b) => a.name.localeCompare(b.name));
 
   return (
-    <div className="grid grid-cols-7 gap-6 place-items-center max-h-[23rem] pb-10 font-league-gothic text-2xl overflow-y-scroll no-scrollbar">
+    <div className="grid grid-cols-7 gap-3 lg:gap-6 place-items-center lg:max-h-[23rem] pb-20 overflow-y-scroll no-scrollbar">
       {sortedHeroes.map((value) => (
         <div key={value.name} className="flex flex-col items-center">
           <img
             src={`${"/" + value.icon}`}
-            className="w-16 h-16 cursor-pointer"
+            className="w-10 lg:w-16 h-10 lg:h-16 cursor-pointer"
             onClick={() => pick(value.name)}
             loading="lazy"
           />
-          <div className="">{value.name}</div>
+          <div className="font-league-gothic text-base lg:text-2xl text-nowrap">{value.name}</div>
         </div>
       ))}
     </div>
@@ -96,40 +96,23 @@ const MidSection = ({ predict, result, setResult, setDatapick }) => {
   );
 };
 
-const RoleSection = ({ active, setActive }) => {
-  const roles = ["Tank", "Fighter", "Assassin", "Mage", "Marksman", "Support"];
+const FilterSection = ({ type, active, setActive }) => {
+  const options =
+    type === "role"
+      ? ["Tank", "Fighter", "Assassin", "Mage", "Marksman", "Support"]
+      : ["Exp Lane", "Jungle", "Mid Lane", "Gold Lane", "Roam"];
 
   return (
-    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center gap-3 flex-1 font-league-gothic text-3xl text-center select-none">
-      {roles.map((role, index) => (
+    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center gap-1 lg:gap-3 flex-1 select-none">
+      {options.map((option, index) => (
         <div
           key={index}
           className={`${
-            active === role ? "bg-gray-900" : "bg-gray-600"
-          } text-gray-50 w-36 py-1 cursor-pointer uppercase`}
-          onClick={() => setActive(active === role ? "" : role)}
+            active === option ? "bg-gray-900" : "bg-gray-600"
+          } font-league-gothic text-base lg:text-3xl text-center text-gray-50 min-w-14 lg:w-36 py-0.5 px-1 cursor-pointer uppercase text-nowrap`}
+          onClick={() => setActive(active === option ? "" : option)}
         >
-          {role}
-        </div>
-      ))}
-    </div>
-  );
-};
-
-const LaneSection = ({ active, setActive }) => {
-  const lanes = ["Exp Lane", "Jungle", "Mid Lane", "Gold Lane", "Roam"];
-
-  return (
-    <div className="absolute left-1/2 top-1/2 -translate-x-1/2 -translate-y-1/2 flex justify-center items-center gap-3 flex-1 font-league-gothic text-3xl text-center select-none">
-      {lanes.map((lane, index) => (
-        <div
-          key={index}
-          className={`${
-            active === lane ? "bg-gray-900" : "bg-gray-600"
-          } text-gray-50 w-36 py-1 cursor-pointer uppercase`}
-          onClick={() => setActive(active === lane ? "" : lane)}
-        >
-          {lane}
+          {option}
         </div>
       ))}
     </div>
@@ -362,9 +345,29 @@ const App = () => {
   }
 
   return (
-    <div className="flex justify-center min-h-screen bg-slate-950">
-      <div className="max-w-7xl max-h-screen w-full h-full bg-[#fdfdfd] overflow-y-hidden">
-        <div className="relative">
+    <div className="relative lg:flex justify-center min-h-screen bg-slate-950">
+      <div class="hidden portrait:flex flex-col fixed inset-0 z-50 bg-slate-900 font-inter text-white text-center items-center justify-center">
+        <svg
+          xmlns="http://www.w3.org/2000/svg"
+          fill="none"
+          viewBox="0 0 24 24"
+          strokeWidth="1.5"
+          stroke="currentColor"
+          className="size-10"
+        >
+          <path
+            strokeLinecap="round"
+            strokeLinejoin="round"
+            d="M19.5 12c0-1.232-.046-2.453-.138-3.662a4.006 4.006 0 0 0-3.7-3.7 48.678 48.678 0 0 0-7.324 0 4.006 4.006 0 0 0-3.7 3.7c-.017.22-.032.441-.046.662M19.5 12l3-3m-3 3-3-3m-12 3c0 1.232.046 2.453.138 3.662a4.006 4.006 0 0 0 3.7 3.7 48.656 48.656 0 0 0 7.324 0 4.006 4.006 0 0 0 3.7-3.7c.017-.22.032-.441.046-.662M4.5 12l3 3m-3-3-3 3"
+          />
+        </svg>
+
+        <p class="text-lg px-6">
+          Putar HP kamu ke <span class="font-bold">mode landscape</span> yaa 😎
+        </p>
+      </div>
+      <div className="portrait:hidden relative lg:max-w-7xl lg:max-h-screen w-full h-full bg-[#fdfdfd]">
+        <div className="hidden lg:block relative">
           <div
             id="team-section"
             className="grid grid-cols-2 relative z-10 pointer-events-auto"
@@ -395,11 +398,55 @@ const App = () => {
             setDatapick={setDatapick}
           />
         </div>
-        <div className="max-w-6xl mx-auto relative flex items-center justify-end py-3">
+        <div className="lg:hidden fixed z-10 w-full flex justify-between">
+          <div className="flex flex-col">
+            <div className="">
+              <img src="public/images/87/portrait.png" alt="miya" className="w-28 h-16 object-cover object-top" />
+            </div>
+            <div className="">
+              <img src="public/images/21/portrait.png" alt="miya" className="w-28 h-16 object-cover object-top" />
+            </div>
+            <div className="">
+              <img src="public/images/101/portrait.png" alt="miya" className="w-28 h-16 object-cover object-[0%_35%]" />
+            </div>
+            <div className="">
+              <img src="public/images/79/portrait.png" alt="miya" className="w-28 h-16 object-cover object-[0%_15%]" />
+            </div>
+            <div className="">
+              <img src="public/images/41/portrait.png" alt="miya" className="w-28 h-16 object-cover object-[0%_20%]" />
+            </div>
+          </div>
+          <div className="flex flex-col">
+            <div className="">
+              <img src="public/images/87/portrait.png" alt="miya" className="w-28 h-16 object-cover object-top" />
+            </div>
+            <div className="">
+              <img src="public/images/21/portrait.png" alt="miya" className="w-28 h-16 object-cover object-top" />
+            </div>
+            <div className="">
+              <img src="public/images/101/portrait.png" alt="miya" className="w-28 h-16 object-cover object-[0%_35%]" />
+            </div>
+            <div className="">
+              <img src="public/images/79/portrait.png" alt="miya" className="w-28 h-16 object-cover object-[0%_15%]" />
+            </div>
+            <div className="">
+              <img src="public/images/41/portrait.png" alt="miya" className="w-28 h-16 object-cover object-[0%_20%]" />
+            </div>
+          </div>
+        </div>
+        <div className="bg-[#fdfdfd] h-12 max-w-[440px] lg:max-w-6xl mx-auto fixed top-0 inset-x-0 z-30 flex items-center">
           {filter === "role" ? (
-            <RoleSection active={activeRole} setActive={setActiveRole} />
+            <FilterSection
+              type="role"
+              active={activeRole}
+              setActive={setActiveRole}
+            />
           ) : filter === "lane" ? (
-            <LaneSection active={activeLane} setActive={setActiveLane} />
+            <FilterSection
+              type="lane"
+              active={activeLane}
+              setActive={setActiveLane}
+            />
           ) : (
             <></>
           )}
@@ -407,7 +454,7 @@ const App = () => {
             onClick={() =>
               setFilter((prev) => (prev === "role" ? "lane" : "role"))
             }
-            className="flex items-center justify-center gap-2 bg-gray-600 text-gray-50 py-1 px-3 cursor-pointer uppercase font-league-gothic text-3xl text-center select-none"
+            className="absolute -right-5 flex items-center justify-center gap-1 bg-gray-600 text-gray-50 py-0.5 px-1 lg:px-3 cursor-pointer uppercase font-league-gothic text-base lg:text-3xl text-center select-none"
           >
             <svg
               xmlns="http://www.w3.org/2000/svg"
@@ -415,7 +462,7 @@ const App = () => {
               viewBox="0 0 24 24"
               strokeWidth="1.5"
               stroke="currentColor"
-              className="size-6"
+              className="size-4"
             >
               <path
                 strokeLinecap="round"
@@ -426,10 +473,8 @@ const App = () => {
             <span>{filter === "role" ? "Role" : "Lane"}</span>
           </div>
         </div>
-        <div className="relative w-full max-w-4xl mx-auto">
-          <div className="h-[23rem] pb-3">
-            <GridHeroes heroes={filteredHeroes} pick={onclickHeroIcon} />
-          </div>
+        <div className="relative pt-12.5 z-20 w-full max-w-md lg:max-w-4xl mx-auto lg:h-[23rem] lg:pb-3">
+          <GridHeroes heroes={filteredHeroes} pick={onclickHeroIcon} />
         </div>
       </div>
     </div>
